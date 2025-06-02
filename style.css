@@ -1,0 +1,5 @@
+/* Hide the Reels tab in the navigation bar */
+a[href="/reels/"] {
+  display: none !important;
+}
+

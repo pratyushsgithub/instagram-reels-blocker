@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "Instagram Reels Blocker",
+  "version": "1.0",
+  "description": "Hide Instagram Reels from your feed",
+  "permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.instagram.com/*"],
+      "js": ["content.js"],
+      "css": ["style.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
+
